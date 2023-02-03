@@ -7,7 +7,7 @@ public class Salary {
 
 	public static void main(String[] args) {
 	
-		
+		DecimalFormat df = new DecimalFormat();
 		Scanner scan = new Scanner(System.in); 
 		
 		System.out.print("이름 입력 : "+"\n");
@@ -20,9 +20,19 @@ public class Salary {
 		int extr = scan.nextInt();
 		
 		int tot = pay + extr;
-		int tax = tot >=5000000 ? tax = tot * 0.03 :
+		double tax = tot >= 5000000 ? tax = tot * 0.03 :
+			tot >= 3000000 ? tax = tot * 0.02 : 0.01;
+		double salary = tot - tax;	
+		
+		System.out.println("***" + name +""+ posi + "월급***");
+		System.out.println();
+		System.out.println("기본급 : " + df.format(pay)+ "원");
+		System.out.println("수당 : " + df.format(extr)+ "원");
+		System.out.println("합계 : " + df.format(tot)+ "원");
+		System.out.println("세금 : " + df.format(tax)+ "원");
+		System.out.println("월급 : " + df.format(salary)+ "원");	
+			
 	}
-
 }
 /*
 [문제] 월급 계산 프로그램 - 조건 연산자
