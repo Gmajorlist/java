@@ -11,9 +11,9 @@ public class AddGame {
 	            int a = (int) (Math.random() * 100); // (int) (Math.random() * (최댓값 - 최소값 + 1) + 최소값)
 	            int b = (int) (Math.random() * 100);
 
-	            Scanner scanner = new Scanner(System.in);
+	            Scanner sc = new Scanner(System.in);
 	            System.out.printf("[%d] %d + %d = ? : ", i, a, b);
-	            int answer = scanner.nextInt();
+	            int answer = sc.nextInt();
 
 	            if (answer == a + b) {
 	                System.out.println("Correct");
@@ -21,7 +21,7 @@ public class AddGame {
 	            } else {
 	                System.out.println("Incorrect");
 	                System.out.printf("[%d] %d + %d = ? : ", i, a, b);
-	                answer = scanner.nextInt();
+	                answer = sc.nextInt();
 	                if (answer == a + b) {
 	                    System.out.println("Correct");
 	                    count++;
