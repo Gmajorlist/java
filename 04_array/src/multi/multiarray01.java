@@ -1,6 +1,6 @@
 package multi;
 
-public class multiarray1 {
+public class multiarray01 {
 
 	public static void main(String[] args) {
 		int[][] ar = new int [3][2]; // 3행 2열 
