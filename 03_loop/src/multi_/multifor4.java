@@ -6,16 +6,18 @@ public class multifor4 {
 
 	public static void main(String[] args) {
 		
-		for(int i=2; i<10; i++) {
-			for(int j=1; j<10; j++) {
-				System.out.print(i+"*"+j+"="+i*j+ "\t");
+		for(int w =2; w<=8; w+=3) {// 3번 w=1 w=2 w=3 또는 2,5,8	
+			for(int i=1; i<10; i++) {
+				for(int j=w; j<w+3; j++) {
+					if(j != 10)System.out.print(i+"*"+j+"="+i*j+ "\t");
+				}
+				System.out.println();
 			}
-			System.out.println("");
+			System.out.println();
+
 		}
-		
 
-	}
-
+	}	
 }
 /*
 3중 for문 사용하세요 (3중 for, if)

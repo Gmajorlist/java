@@ -2,6 +2,8 @@ package array;
 
 public class array01 {
 
+	private static int i;
+
 	public static void main(String[] args) {
 		int[] ar;
 		ar = new int[5]; 
@@ -20,12 +22,13 @@ public class array01 {
 		System.out.println();
 		
 		System.out.println("거꾸로 출력");
-
+	
 		for(int i=ar.length-1; i>0; i--); {
-			System.out.println("ar[" + 2 + "] =" +ar[2]);
+			
+			System.out.println("ar[" + i + "] =" +ar[i]);
 		}
 		System.out.println();
-		
+	
 		System.out.println("홀수 데이터만 출력");
 		for(int i=0; i<ar.length; i++ ) {
 			if(ar[i]%2 == 1 ) System.out.println("ar[" + i + "] = "+ ar[i]);
