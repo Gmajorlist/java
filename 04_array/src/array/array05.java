@@ -5,6 +5,32 @@ public class array05 {
 	public static void main(String[] args) {
 		char[] ar = new char[50];
 		int[] count = new int[26];
+		
+		for(int i=0; i<ar.length; i++) {
+			ar[i] = (char)(Math.random()* 26 + 65);
+			
+			// 각 문자의 개수 구하기
+			for(int j=0; j<count.length; j++) {
+				if(ar[i] == 65+j)count[j]++;
+			}//for j
+		}//for i
+		
+		//출력
+		for(int i=0; i<ar.length; i++) {
+			System.out.print(ar[i]+ " ");
+			if((i+1)%10 == 0)System.out.println();
+		}
+		//개수 출력 
+		for(int i=0; i<count.length; i++) {
+			System.out.print((char)(i+65)+ " : " + count[i]+"\t");
+			if((i+1)%4 == 0 ) System.out.println();
+		}
+		
+		
+		
+		
+		
+
 	}
 
 }
