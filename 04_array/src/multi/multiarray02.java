@@ -7,16 +7,16 @@ public class multiarray02 {
 		int num =0;
 		
 		//입력
-//		for(int i=0; i<ar.length; i++) {
-//			for(int j=0; j<ar[i].length; j++) {
-//				num++;
-//				ar[i][j]= num;
-//			}
-//		}//입력부분은 마음대로 수정가능
 		for(int i=0; i<ar.length; i++) {
 			for(int j=0; j<ar[i].length; j++) {
 				num++;
-				ar[j][i]= num;
+				ar[i][j]= num;
+			}
+		}//입력부분은 마음대로 수정가능
+//		for(int i=0; i<ar.length; i++) {
+//			for(int j=0; j<ar[i].length; j++) {
+//				num++;
+//				ar[j][i]= num;
 //			}   1  11  21  31  41  51  61  71  81  91
 //			   2  12  22  32  42  52  62  72  82  92
 //			   3  13  23  33  43  53  63  73  83  93
@@ -27,8 +27,8 @@ public class multiarray02 {
 //			   8  18  28  38  48  58  68  78  88  98
 //			   9  19  29  39  49  59  69  79  89  99
 //			  10  20  30  40  50  60  70  80  90 100
-			}
-			}
+			
+			
 //		for(int i=ar.length-1; i>=0; i--) {
 //			for(int j=ar[i].length-1; j>=0; j--) {
 //				num++;
@@ -44,13 +44,7 @@ public class multiarray02 {
 //			  20  19  18  17  16  15  14  13  12  11
 //			  10   9   8   7   6   5   4   3   2   1
 
-//		}
-		
-		
-		
-		
-		
-		
+//		
 		//출력
 		for(int i=0; i<ar.length; i++) {//3을쓴이유는 3행이라서 
 			for(int j=0; j<ar[i].length; j++) {
@@ -59,11 +53,10 @@ public class multiarray02 {
 			System.out.println();
 		}//for i
 		
-		
-
+		}
 	}
 
-		}
+		
 
 	
 

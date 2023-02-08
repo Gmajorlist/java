@@ -3,37 +3,32 @@ package array;
 public class bubblesort {
 
 	public static void main(String[] args) {
-		int[] ar = {25, 40, 32 ,78, 56};
-		
-			//소트 전
-			for(int i=0; i<ar.length; i++) {
-				System.out.print(String.format("%4d", ar[i]));
-			}
-			System.out.println();
-			
-			//정렬
-			//오름차순 ( ASCENDING)
-			//내림차순	( DESCENDING)\
-			int temp;
-			for(int i=0; i<ar.length-1; i++ ) {
-				for(int j=0; j<ar.length-1-i; j++){
-					if(ar[i] > ar[j+1]) {// > 오름차순, < 내림차순
-						temp = ar[j];
-						ar[j] = ar[j+1];
-						ar[j+1] = temp;
-					}
-				}
-			}
-			//소트 후 
-			for(int i=0; i<ar.length; i++) {
-				System.out.print(String.format("%4d", ar[i]));
-			}
-			System.out.println();
-		}
+        int[] arr = {25, 40, 32, 78, 56};
 
+        // sort 전
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
 
-
-
+        // ascending sort
+        for (int i = 0; i < arr.length - 1; i++) {
+        	// 총 라운드 = 배열 크기 - 1: 한 번의 반복이 완료될 때 마다 가장 큰 수는
+                                                   
+        	// 배열의 마지막 부분으로 밀리는 것이 보장됨, 따라서 한 번의 라운드마다 가장 뒤의
+                                                    
+        	// 인덱스는 비교 X
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+            	// 라운드 별 비교 횟수
+                if (arr[j] > arr[j + 1]) {
+                    int tmp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = tmp;
+                }
+            }
+        }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
 }
-
-
