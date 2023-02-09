@@ -12,11 +12,15 @@ class Person{
 	public void setAge(int a) {
 		age = a;
 	}
+	
+	
 	public void setData(String n , int a) {
 		name = n;
 		age = a;
 	}// overload 위에꺼아래께
 	public void setData() {}
+	
+	
 	
 	public String getName(){
 		return name; //반환값
