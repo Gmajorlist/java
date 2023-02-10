@@ -36,6 +36,18 @@ class Sam extends Shape{
 		System.out.println("삼각형 넓이 = " + area );
 	}
 }
+//=======================================================
+class Sa extends Shape{
+	protected int width, height;
+	public Sa() {
+		System.out.println("Sa 기본 생성자");
+		System.out.println("넓이 : ");
+		width = sc.nextInt();
+		System.out.println("높이 : ");
+		height = sc.nextInt();
+	}
+	
+}
 
 public class shapemain {
 
@@ -43,7 +55,24 @@ public class shapemain {
 		Sam sam = new Sam();
 		sam.calcArea();
 		sam.dispArea();
-			
+		System.out.println();
+		
+		Sa sa = new Sa();
+		sa.calcArea();
+		sa.dispArea();
+		System.out.println();
+	//다형성 >>> 부모 = 자식
+		Shape shape;
+		shape = new Sam();
+		shape.calcArea();
+		shape.dispArea();
+		System.out.println();
+		
+		shape = new Sa();
+		shape.calcArea();
+		shape.dispArea();
+		System.out.println();
+		
 		
 	}
 
