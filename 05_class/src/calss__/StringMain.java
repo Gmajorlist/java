@@ -36,14 +36,14 @@ public class StringMain {
 			
 		}
 		System.out.println("부분 문자열 추출=" +e.substring(7));
-		System.out.println("부분 문자열 추출=" +e.substring(7,11));
+		System.out.println("부분 문자열 추출=" +e.substring(7,11));// 7번부터 10번
 		
 		System.out.println("대문자 변경 ="  + "Hello".toUpperCase());
 		System.out.println("소문자 변경 ="  + "Hello".toLowerCase());
 		
 		System.out.println("문자열 검색 ="  + e.indexOf("짜"));
 		System.out.println("문자열 검색 ="  + e.indexOf("날짜"));
-		System.out.println("문자열 검색 ="  + e.indexOf("개바부"));
+		System.out.println("문자열 검색 ="  + e.indexOf("개바부"));//-1
 		
 		System.out.println("문자열 치환 ="  + e.replace("날짜", "일자"));
 		
