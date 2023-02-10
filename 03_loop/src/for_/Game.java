@@ -13,7 +13,7 @@ public class Game {
 		
 		
 		
-	}
+	
 	Scanner sc = new Scanner(System.in);
     System.out.print("insert coin : ");
     int won= sc.nextInt();
@@ -68,7 +68,7 @@ public class Game {
  }
     
 }}
- 
+
 
 /*
 [문제] 가위, 바위, 보 게임
