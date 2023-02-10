@@ -38,7 +38,7 @@ overload /쌍둥이
 = 메서드 이름이 똑같다.
 = 인수 개수, 인수형
 override
-= 부모크래스와 자식클래스 다 똑같아야한다.
+= 부모클래스와 자식클래스 다 똑같아야한다.
 =modifier(접근제한자) public,protected, private //  단 , 자식클래스 modifier가 더 커야 한다.
 
 */
