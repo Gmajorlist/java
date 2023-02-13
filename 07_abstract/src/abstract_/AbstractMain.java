@@ -1,6 +1,11 @@
 package abstract_;
 
-public class AbstractMain {
+public class AbstractMain extends AbstractTest{
+	
+	@Override
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public static void main(String[] args) {
 		AbstractTest at = new AbstractTest();//추상클래스는 new 메모리에 생성x

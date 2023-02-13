@@ -1,6 +1,8 @@
 package abstract_;
 
 public abstract class AbstractTest { //POJO (Plain Old Java Object)
+	protected 
+	
 	private String name;
 //private 외부로 부터 데이터가 안들어옴
 //생성자, setter로 들어오고 getter로 나감 
