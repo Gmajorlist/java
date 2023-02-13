@@ -8,11 +8,50 @@ public class ExamMain {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("인원수 입력 : ");
-		int cn = sc.nextInt();
-
-	}//객체 배열
+		int cnt = sc.nextInt();
+		//객체 배열
+		Exam[]ar = new Exam[cnt];
+		//입력
+		for(int k=0; k<ar.length; k++) {
+			ar[k] = new Exam();
+			
+			ar[k].campare();
+		}//for k 
+		
+		//출력
+		for(Exam e : ar) {System.out.println("이름\t 1 2 3 4 5 \t 점수");
+		System.out.print(e.getname()+ "\t");
+		for(int i=0; i<e.getOx().length; i++) {
+			System.out.print(e.getOx()[i]+ " ");
+		}// for i 
+		System.out.println("\t" + e.getScore());
+			
+		}////////////////////////////////////////////////
+//		
+//		//클래서 생성 밑에EXAM말고 다른 클래스가 올 수 없다.
+//		ar[0] = new Exam();
+//		ar[1] = new Exam();
+//		
+//		
+//		
+//		
+//		//한명거만듬
+//		Exam aa =new Exam();
+//		aa.campare();
+//		System.out.println();
+//		System.out.println("이름\t 1 2 3 4 5 \t 점수");
+//		System.out.print(aa.getname()+ "\t");
+//		for(int i=0; i<aa.getOx().length; i++) {
+//			System.out.print(aa.getOx()[i]+ " ");
+//		}// for i 
+//		System.out.println("\t" + aa.getScore());
+////////////////////////////////////////////////////////////
+	}
 
 }
+
+
+
 /*
 [문제]
 -총 5문제의 답을 입력받는다.
