@@ -1,5 +1,7 @@
 package calss__;
-
+class Fruit{
+	
+}
 public class FruitMain {
 
 	public static void main(String[] args) {
