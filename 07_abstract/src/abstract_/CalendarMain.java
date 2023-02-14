@@ -1,11 +1,20 @@
 package abstract_;
 
+import java.util.Date;
+import java.util.Scanner;
+
 public class CalendarMain {
 
 	public static void main(String[] args) {
+		Date date = new Date();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("년도 입력  : ");
+		int year = sc.nextInt();
+		System.out.println("월 입력  : ");
+		int month = sc.nextInt();
 		
-
 	}
+
 
 }
 /*

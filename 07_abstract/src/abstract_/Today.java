@@ -43,7 +43,7 @@ public class Today {
 		case 4 : dayOfWeek = "수"; break;
 		case 5 : dayOfWeek = "목"; break;
 		case 6 : dayOfWeek = "금"; break;
-		case 7 : dayOfWeek = "토"; break;
+		case 7 : dayOfWeek = "토";
 		}
 		int hour = cal.get(Calendar.HOUR_OF_DAY);
 		int minute = cal.get(Calendar.MINUTE);
