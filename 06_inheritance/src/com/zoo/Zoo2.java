@@ -7,7 +7,7 @@ public class Zoo2 {
 		z.tiger();
 		z.giraffe(); 
 		z.elephant();
-		z.lion(); 
+//		z.lion(); 
 
 	}
 
