@@ -38,9 +38,9 @@ public class SungjukUpdate implements Sungjuk {
 		sungjukDTO.setMath(math);
 		
 		sungjukDTO.calc();
-		
 		System.out.println("수정했다");
 	}
 	if(sw == 0)
 		Syste.out.pritln("없다 번호");
+}
 }
