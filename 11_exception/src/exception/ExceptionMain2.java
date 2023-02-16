@@ -14,12 +14,21 @@ public class ExceptionMain2 {
 	
 	}
 	public void output() {
-		int mul =1 ;
-		for(int i=1; i<=y; i++) {
-			mul*=x;
+		if(y >= 0) {
+			int mul =1 ;
+			for(int i=1; i<=y; i++) {
+				mul*=x;
 		}
-		System.out.println(x + "의" + y + "승은" + mul);
-	}
+			System.out.println(x + "의" + y + "승은" + mul);
+		}else {
+			//System.out.println("y는 0보다 크거나 같아야 해 ");
+			// 개발자가 강제로 Exception 발생
+			try {
+			throw new Exception("y는 0보다 크거나 같아야 해");
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		}}
 	public static void main(String[] args) {
 		ExceptionMain2 exceptionMain2 = new ExceptionMain2();
 		exceptionMain2.input();
