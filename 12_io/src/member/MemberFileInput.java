@@ -24,15 +24,15 @@ public class MemberFileInput implements Member {
 				try {
 					MemberDTO memberDTO = (MemberDTO)ois.readObject();
 					list.add(memberDTO);
-			}catch(EOFException e) {
-				break;
+			}	catch(EOFException e) {
+					break;
 			}
 			}
 			
 			ois.close();
 			System.out.println("파일 읽기 완료");
-		}catch (IOException e) {
 			
+		}catch (IOException e) {
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();

@@ -2,7 +2,7 @@ package member;
 
 import java.io.Serializable;
 
-public class MemberDTO implements Serializable {//1인분임
+public class MemberDTO implements Comparable<MemberDTO>, Serializable {//1인분임
 	private String name;
 	private int age;
 	private String phone;
@@ -50,6 +50,12 @@ public class MemberDTO implements Serializable {//1인분임
 	@Override
 	public String toString() {
 		return name + "\t" + age + "\t" + phone + "\t" + address;
+	}
+
+	@Override
+	public int compareTo(MemberDTO m) {
+		//오름차순이니까 이걸로 끝이다
+		return name.compareTo(m.getName());
 	}
 
 

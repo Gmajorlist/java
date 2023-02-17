@@ -1,10 +1,18 @@
 package member;
 
-public class MemberNameAsc {
+import java.util.Collections;
+import java.util.List;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class MemberNameAsc implements Member {
 
+	@Override
+	public void execute(List<MemberDTO> list) {
+		Collections.sort(list);
+		
+		System.out.println("이름\t나이\t핸드폰\t\t주소");
+		for(MemberDTO memberDTO : list) {
+			System.out.println(memberDTO);
 	}
 
+}
 }

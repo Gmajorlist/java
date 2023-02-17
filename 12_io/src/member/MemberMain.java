@@ -1,7 +1,7 @@
 package member;
 
 public class MemberMain {
-
+	private long serialVersionUID = 1L;
 	public static void main(String[] args) {
 		MemberService ms = new MemberService();
 		ms.menu(); //메뉴 함수갔다가 while 에서 빙글돌다가 다시 옴

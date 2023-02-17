@@ -32,9 +32,9 @@ public class MemberService {
 			if(num == 7)break; 
 			
 			if(num == 1)member = new MemberInsert();
-			else if(num == 2);
-			else if(num == 3);
-			else if(num == 4);
+			else if(num == 2)member = new MemberPrint();
+			else if(num == 3)member = new MemberPhoneSearch();
+			else if(num == 4)member = new MemberNameAsc();
 			else if(num == 5)member = new MemberFileOutput();
 			else if(num == 6)member = new MemberFileInput();
 			
